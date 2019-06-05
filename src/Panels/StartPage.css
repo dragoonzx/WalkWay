@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap&subset=cyrillic');
+
+@keyframes appearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  50% {
+    opacity: 0.5;
+    transform: rotate(180deg);
+  }
+  100% {
+    opacity: 0.5;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes up-moving {
+  0% {
+    margin-top: 100%;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}
+
+@keyframes down-moving {
+  100% {
+    margin-top: 20%;
+    opacity: 0;
+  }
+  0% {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
+
+.accept-button-up {
+  margin-top: 20%;
+  animation: up-moving 0.8s ease forwards;
+}
+
+.accept-button-down {
+  margin-top: 0%;
+  animation: down-moving 1s ease forwards;
+}
+
+.start-page {
+  background: linear-gradient(
+    150.65deg,
+    rgba(248, 212, 83, 0.65) 0%,
+    rgba(255, 91, 163, 0.65) 74.48%
+  );
+  /* background: linear-gradient(155.93deg, #F49D91 9.92%, rgba(237, 87, 177, 0.54) 92.29%); */
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  text-align: center;
+}
+
+.text {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header-text {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20vh;
+  animation: appearance 2s ease;
+}
+
+.text_bold {
+  font-weight: bold;
+}
+
+.small-text {
+  font-size: 13px;
+  margin-top: 2vh;
+}
+
+.items {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(2, auto);
+  justify-items: center;
+  justify-content: center;
+  align-content: start;
+  grid-gap: 45px;
+  width: 100vw;
+  height: 50vh;
+  margin-top: 6vh;
+}
+
+.square-item {
+  height: 90px;
+  width: 90px;
+  border-radius: 30px;
+}
+
+.item_color_red {
+  background: #dd2b2b;
+}
+
+.item_color_red_anim {
+  animation: rotation 1s linear;
+}
+
+.item_color_orange {
+  background: #ff9900;
+}
+
+.item_color_orange_anim {
+  animation: rotation 1s linear 0.2s;
+}
+
+.item_color_blue {
+  background: #43aeeb;
+}
+.item_color_blue_anim {
+  animation: rotation 1s linear 0.4s;
+}
+
+.item_color_green {
+  background: #1fbd97;
+}
+
+.item_color_green_anim {
+  animation: rotation 1s linear 0.6s;
+}
+
+.item-icon {
+  height: 50px;
+  width: 50px;
+  padding: 20px;
+}
+
+.item_choose_false {
+  opacity: 0.5;
+}
+
+.item_choose_true {
+  opacity: 1;
+}
+
+.link {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-block;
+  height: 40px;
+  width: 50vw;
+  margin-top: 9px;
+}
+
+.button {
+  background-color: #1fbd97;
+  height: 40px;
+  width: 50vw;
+  margin-left: 25vw;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 30px;
+}
+
+.button:active {
+  background-color: #3da38a;
+}

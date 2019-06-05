@@ -1,0 +1,32 @@
+.leaflet-interactive {
+  stroke: pink;
+  stroke-opacity: 1;
+}
+
+.leaflet-routing-container {
+  display: none;
+}
+
+.leaflet-control-zoom {
+  opacity: 0;
+}
+
+.leaflet-popup-content {
+  height: 20vh;
+  width: 60vw !important;
+  background-image: url('http://hotel-gatchina.ru/wp-content/uploads/2016/03/kirha2-sm.jpg');
+  background-size: 60vw 20vh;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: -44%;
+}
+
+.leaflet-popup-tip-container {
+  left: 50%;
+}
+
+.leaflet-popup-close-button {
+  opacity: 0;
+}

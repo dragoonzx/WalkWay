@@ -1,0 +1,173 @@
+@keyframes move-tinder-up {
+  0% {
+    margin-top: 81vh;
+  }
+  100% {
+    margin-top: 0vh;
+  }
+}
+
+@keyframes move-tinder-down {
+  100% {
+    margin-top: 81vh;
+  }
+}
+
+@keyframes move-button-up {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes move-button-down {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes move-tinder-new {
+  0% {
+    margin-top: 100vh;
+  }
+  50% {
+    margin-top: 75vh;
+  }
+  100% {
+    margin-top: 81vh;
+  }
+}
+
+.tinder-card {
+  width: 80vw;
+  max-width: 60vh;
+  height: 80vh;
+  background: #f1f1f1;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10vh;
+  border-radius: 30px;
+}
+
+.tinder-card-new {
+  animation: move-tinder-new 0.9s forwards;
+}
+.tinder-card-down {
+  animation: move-tinder-down 2s forwards;
+}
+
+.tinder-card-up {
+  animation: move-tinder-up 1s forwards;
+}
+
+.move-button-down {
+  animation: move-button-down 0.8s forwards;
+}
+
+.move-button-up {
+  animation: move-button-up 0.8s forwards;
+}
+
+.move-button {
+  position: absolute;
+  width: 7%;
+  height: 7%;
+  margin-left: 85%;
+  margin-top: 5%;
+}
+
+.tinder-card-header {
+  position: absolute;
+  margin-top: 7%;
+  text-align: left;
+  margin-left: 7%;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0%;
+  margin-bottom: 5%;
+}
+
+.place-info {
+  display: grid;
+  margin-top: 4%;
+  grid-template-columns: 3vw 4fr;
+  grid-template-rows: 50px 1fr;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.typeof-place {
+  padding: 10px;
+  border-radius: 50%;
+  justify-self: center;
+  height: 50%;
+}
+
+.nameof-place {
+  height: 5%;
+  font-weight: 300;
+  padding-left: 8%;
+}
+
+.desc-place {
+  padding-left: 8%;
+  font-size: 12px;
+  padding-right: 8%;
+  margin-top: -7%;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: rgb(156, 156, 156);
+  margin-top: 20%;
+}
+.scrolling {
+  position: fixed;
+  overflow: scroll;
+  height: 62vh;
+}
+
+.Monument {
+  background-color: rgb(100, 174, 235);
+}
+
+.Museum {
+  background: orange;
+}
+
+.Park {
+  background: rgb(25, 138, 25);
+}
+
+.Food {
+  background: rgb(206, 109, 219);
+}
+
+.buy-button {
+  background: rgb(91, 91, 223);
+  height: 6vh;
+  width: 90%;
+  margin-top: 63vh;
+  margin-left: 1vw;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 37px;
+  color: aliceblue;
+}
+
+.separator {
+  height: 1px;
+  width: 90%;
+  background-color: rgb(165, 165, 165);
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: 4%;
+}
+
+.big-desc {
+  margin-top: 3%;
+}
