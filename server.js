@@ -20,6 +20,8 @@ var credentials = { key: privateKey, cert: certificate }
 var httpServer = http.createServer(app)
 var httpsServer = https.createServer(credentials, app)
 
+app.use(redirectToHTTPS([/improveyourself.ru:(\d{4})/], [/\/insecure/], 301))
+
 app.use(express.static(__dirname + '/build'))
 
 app.get('/', function(req, res) {
